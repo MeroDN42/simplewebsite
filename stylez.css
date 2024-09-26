@@ -1,0 +1,50 @@
+:root {
+	/*colors*/
+	--c-main: #3697ff;
+	--c-main-dark: #0059b8;
+	--c-contrast: #ffffff;
+
+	--shadow-x: 2px; 
+	--shadow-y: 2px;
+}
+
+body {
+	background-color:var(--c-main);
+	color:var(--c-contrast);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+	font-size: 8pt;
+	text-shadow: 1px 1px 2px var(--c-main-dark);
+}
+
+.menu {
+	color: var(--c-main);
+	position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color:var(--c-contrast);
+    box-shadow: 0 var(--shadow-x) var(--shadow-y) var(--c-main);
+    padding: 10px;
+    border-radius: 0px;
+    display: grid;
+    grid-template-rows: repeat(5, auto); /* Create 5 rows for buttons */
+    row-gap: 10px; /* Add space between buttons */
+}
+
+.grid-button {
+    padding: 10px 10px;
+    border: none;
+    background-color: var(--c-contrast);
+    color: var(--c-main);
+	box-shadow: 0px 0px var(--shadow-x) var(--shadow-y) var(--c-main);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.grid-button:hover {
+    background-color: var(--c-main);
+	color: var(--c-contrast);
+}
